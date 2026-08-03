@@ -6,7 +6,10 @@ on:
     branches:
       - main
       - 'feature/*'
-    
+env:
+  MONGO_URI: 'mongodb'
+  MONGO_USERNAME: superuser
+  MONGO_PASSWORD: 'mongodb
 jobs:
     unit-testing:
         name: Unit Testing
